@@ -7,10 +7,3 @@
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-@mixin flex($justify: center,$align:center,$direction:row,$wrap: nowrap){
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
-}
