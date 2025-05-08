@@ -1,0 +1,6 @@
+@import '../../Scss/_mixins';
+.home-container{
+    @include flex(center,center);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
