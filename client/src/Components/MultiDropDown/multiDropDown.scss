@@ -1,0 +1,79 @@
+.multiDropDownContainer {
+    .multiDropDown {
+      width: 400px;
+  
+      input {
+        border: none;
+        outline: none;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 2px 2px #9dd4ff;
+        transition: all 0.5s;
+  
+        &:focus {
+          box-shadow: 0 0 5px 2px #004377;
+        }
+      }
+    }
+  
+    .dropdown {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      gap: 10px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      height: 0;
+      overflow-y: hidden;
+      padding: 0;
+      transition: all 0.5s ease;
+      box-shadow: none;
+  
+      &.open {
+        height: 200px;
+        overflow-y: auto;
+        padding: 10px;
+        box-shadow: 0 0 10px 2px #0000005b;
+      }
+  
+      .option {
+        padding: 10px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &.selected {
+          background-color: #7dbeef50;
+          color: #004377;
+  
+          .success-icon {
+            color: #004377;
+            float: right;
+          }
+        }
+      }
+  
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 10px;
+      }
+  
+      &::-webkit-scrollbar-button {
+        display: none;
+      }
+  
+      scrollbar-width: thin;
+      scrollbar-color: #ccc transparent;
+    }
+  }
+  
